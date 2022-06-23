@@ -54,6 +54,13 @@ func Calc() {
 		fmt.Println("******************************************************")
 		return
 	}
+	if choice > 5 || choice < 1 {
+		fmt.Println("You clicked Invalid key.")
+		fmt.Println("******************************************************")
+		fmt.Println("Thank you for using calculator! Have a nice day.")
+		fmt.Println("******************************************************")
+		return
+	}
 	var a, b int
 
 	// After the choice of operation, user
@@ -91,12 +98,6 @@ func Calc() {
 		// or may display infinity
 		ans := a / b
 		fmt.Println("Answer = ", ans)
-	} else {
-		fmt.Println("You clicked Invalid key.")
-		fmt.Println("******************************************************")
-		fmt.Println("Thank you for using calculator! Have a nice day.")
-		fmt.Println("******************************************************")
-		return
 	}
 
 	fmt.Println("******************************************************")
