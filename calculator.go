@@ -46,6 +46,14 @@ func Calc() {
 		log.Println("Scan error: ", err)
 		return
 	}
+	
+	if choice == 5 {
+		fmt.Println("You clicked on exit.")
+		fmt.Println("******************************************************")
+		fmt.Println("Thank you for using calculator! Have a nice day.")
+		fmt.Println("******************************************************")
+		return
+	}
 	var a, b int
 
 	// After the choice of operation, user
@@ -84,7 +92,7 @@ func Calc() {
 		ans := a / b
 		fmt.Println("Answer = ", ans)
 	} else {
-		fmt.Println("You clicked on exit.")
+		fmt.Println("You clicked Invalid key.")
 		fmt.Println("******************************************************")
 		fmt.Println("Thank you for using calculator! Have a nice day.")
 		fmt.Println("******************************************************")
